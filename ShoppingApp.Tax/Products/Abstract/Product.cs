@@ -18,7 +18,6 @@ namespace ShoppingApp.Tax.Products.Abstract
 
         public int Quantity { get; set; }
 
-        public double TaxCost { get; set; }
         public Product()
         {
             this.Name = string.Empty;
@@ -32,17 +31,7 @@ namespace ShoppingApp.Tax.Products.Abstract
             this.Price = price;
             this.Imported = imported;
             this.Quantity = quantity;
-        }
-
-        public override string ToString()
-        {
-            return (Quantity + " " + ImportedToString(Imported) + " " + Name + " : " + TaxCost);
-        }
-
-        public string ImportedToString(bool imported)
-        {
-            return !imported ? string.Empty : "imported";
-        }
+        }        
 
         public abstract ProductFactory GetFactory();
     

@@ -4,14 +4,19 @@ namespace ShoppingApp.Tax.TaxCalculation
 {
     public class CalculateTax : ITaxCalculation
     {
-        double ITaxCalculation.CalculateTax(double price, double tax, bool imported)
+        private const double ROUND_OFF = 0.05;
+
+        double ITaxCalculation.CalculateTax(double price,
+                double tax, bool imported)
         {
             double calculatedtax = price * tax;
 
             if (imported)
-                tax += (price * 0.5);
+                calculatedtax += (price * 0.5);
 
-            return tax;
+            calculatedtax = (int)(calculatedtax / ROUND_OFF + 0.5) * 0.05;
+
+            return calculatedtax;
         }
     }
 }

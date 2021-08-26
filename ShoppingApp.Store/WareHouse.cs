@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace ShoppingApp.Store
 {
+    /// <summary>
+    /// Ware House hold the products and its factory
+    /// </summary>
     public class WareHouse
     {
         private readonly Dictionary<string, Product> productItems;

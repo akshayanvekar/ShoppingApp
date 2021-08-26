@@ -3,8 +3,11 @@ using System;
 
 namespace ShoppingApp.Tax.Products.Contracts
 {
+    /// <summary>
+    /// Product Factory
+    /// </summary>
     public abstract class ProductFactory
     {
-        public abstract Product CreateProduct(String name, double price, bool imported, int quantity);
+        public abstract Product CreateProduct(string name, double price, bool imported, int quantity);
     }
 }
