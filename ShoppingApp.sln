@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingApp.Client", "ShoppingApp.Client\ShoppingApp.Client.csproj", "{CEBCF8AD-3895-41ED-B19B-BB22D0357C0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingApp.Tax", "ShoppingApp.Tax\ShoppingApp.Tax.csproj", "{14C616A9-DF39-407B-9442-C32A1B4A5F58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingApp.Service", "ShoppingApp.Tax\ShoppingApp.Service.csproj", "{14C616A9-DF39-407B-9442-C32A1B4A5F58}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingApp.Store", "ShoppingApp.Store\ShoppingApp.Store.csproj", "{31B60EEF-D68A-46B3-98C9-9BE37ADACFDA}"
 EndProject
