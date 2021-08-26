@@ -19,7 +19,13 @@ namespace ShoppingApp.Tax.Products.Abstract
         public int Quantity { get; set; }
 
         public double TaxCost { get; set; }
-
+        public Product()
+        {
+            this.Name = string.Empty;
+            this.Price = 0.0;
+            this.Imported = false;
+            this.Quantity = 0;
+        }
         public Product(string name, double price, bool imported, int quantity)
         {
             this.Name = name;
